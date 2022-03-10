@@ -1,0 +1,344 @@
+* {
+    margin:0;
+    padding:0;
+    font-size: inherit ;
+}
+
+body {
+    background-color: #FE968D;
+}
+
+/* ROOMS */
+
+#room {
+    position:relative;
+    width: 1500px;
+    height: 768px;
+
+    background-image: url(../img/room.png);
+   
+    margin: 15px;  
+    border: 5px solid white;
+}
+
+#city {
+    position:relative;
+    width: 1500px;
+    height: 768px;
+
+    background-image: url(../img/sky.png);
+   
+    margin: 15px;  
+    border: 5px solid white;
+}
+
+/* TEXT */
+
+#tired {
+    position: absolute;
+    left: 450px;
+    bottom: 300px;
+    width: 600px;
+    background-color: white;
+    color: black;
+    font-size: 100px;
+    padding: 5px;
+}
+
+#shopinfo {
+    position: absolute;
+    top: 150px;
+    right: 250px;
+    background-color: black;
+    color: white;
+    font-size: 40px;
+    width: 300px;
+}
+
+#restaurantinfo {
+    position: absolute;
+    top: 200px;
+    left: 500px;
+    background-color: black;
+    color: white;
+    font-size: 40px;
+    width: 300px;
+}
+
+#text {
+    position: absolute;
+    left: 15px;
+    top: 800px;
+}
+
+#texts {
+    position: absolute;
+    left: 35px;
+    top: 925px;
+    width: 1500px;
+}
+
+p {
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 25px;
+    color: white;
+}
+
+a {
+    color: white;
+    text-decoration: underline;
+}
+
+/* MONSTER */
+
+#monster {
+    position: absolute;
+    left: 140px;
+    top: 210px;
+    opacity: 0;
+    transition: 1s;
+}
+
+#monsterLay {
+    position: absolute;
+    left: 135px;
+    top: 210px;
+}
+
+/* FURNITURE */
+
+#floor {
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+}
+
+#bed {
+    position: absolute;
+    top: 250px;
+}
+
+#mat {
+    position: absolute;
+    left: 250px;
+    bottom: 125px;
+}
+
+#desk {
+    position: absolute;
+    top: 245px;
+    right: 460px;
+}
+
+#books {
+    position: absolute;
+    top: 43px;
+    right: 275px;
+}
+
+/* CLOTHES */
+
+#dress {
+    position: absolute;
+    top: 167px;
+    right : 290px;
+}
+
+#shirt {
+    position: absolute;
+    top: 165px;
+    right: 192px;
+}
+
+#dresson {
+    position: absolute;
+    left: 130px;
+    top: 350px;
+    transition: 1s;
+}
+
+#shirton {
+    position: absolute;
+    left: 152px;
+    top: 350px;
+    transition: 1s;
+}
+
+/* WORK ITEMS */
+
+#computer {
+    position: absolute;
+    top: 110px;
+    right: 545px;
+}
+
+#back {
+    position: absolute;
+    left: 725px;
+    top: 250px;
+    opacity: 0;
+}
+
+/* MOVEMENTS */
+
+#monster.computer {
+    transform: translateX( 30em );
+}
+
+#dresson.computer {
+    transform: translateX( 30em );
+}
+
+#shirton.computer {
+    transform: translateX( 30em );
+}
+
+/* HEALTHBAR */
+
+#hb {
+    position: absolute;
+    left: 35px;
+    top: 35px;
+}
+
+#bg {
+    height: 24px;
+    width: 325px;
+    position: relative;
+    background: white;
+    padding: 5px;
+}
+
+.bar>span {
+    display: block;
+    height: 100%;
+    position: relative;
+}
+
+#healthbar {    
+    font-size: 20px;
+    color: white;
+    font-weight: bold;
+    text-align: left;
+    font-family: Arial, Helvetica, sans-serif;
+    width: 100%;
+    background-color: green;
+}
+
+#healthbar.bad {
+    background-color: red;
+}
+
+/* MONEYBAR */
+
+#mb {
+    position: absolute;
+    left: 35px;
+    top: 85px;
+}
+
+#bgmb {
+    height: 24px;
+    width: 325px;
+    position: relative;
+    background: white;
+    padding: 5px;
+}
+
+.mbar>span {
+    display: block;
+    height: 100%;
+    position: relative;
+}
+
+#moneybar {    
+    font-size: 20px;
+    color: white;
+    font-weight: bold;
+    text-align: left;
+    font-family: Arial, Helvetica, sans-serif;
+    width:100%;
+    background-color: green;
+}
+
+#moneybar.mbbad {
+    background-color: red;
+}
+
+/*CITY*/
+
+#restaurant {
+    position: absolute;
+    left: 400px;
+    bottom: 55px;
+}
+
+#rDoor {
+    position: absolute;
+    left: 450px;
+    bottom: 95px;
+}
+
+#shop {
+    position: absolute;
+    right: 150px;
+    bottom: 60px;
+}
+
+#sDoor {
+    position: absolute;
+    right: 250px;
+    bottom: 80px;
+}
+
+#sidewalk {
+    position: absolute;
+    bottom: 0px;
+}
+
+/* MOVING THROUGH CITY */
+
+#monster.restaurant {
+    transform: translateX( 150px );
+}
+
+#dresson.restaurant {
+    transform: translateX(150px);
+}
+
+#shirton.restaurant {
+    transform: translateX(150px);
+}
+
+#monster.shop {
+    transform: translateX( 650px );
+}
+
+#dresson.shop {
+    transform: translateX(650px);
+}
+
+#shirton.shop {
+    transform: translateX(650px);
+}
+
+/*BUTTONS*/
+
+button {
+    position: absolute;
+    right: 25px;
+    bottom: 25px;
+
+    color: white;
+    text-decoration: none;
+    font-size: 30px;
+    background-color: #FE968D;
+    border: 5px solid white;
+    padding: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+button:hover {
+    color: #FE968D;
+    background-color: white;
+}
